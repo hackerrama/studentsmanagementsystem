@@ -51,7 +51,12 @@
 				<th>First Name</th>
 				<th>Last Name</th>
 				<th>Email</th>
+				<th>Address</th>
+				<th>Contact</th>
+				<th>DOB</th>
+				<th>Course</th>
 				<th>Action</th>
+				
 			</tr>
 		</thead>
 		
@@ -60,6 +65,11 @@
 				<td th:text="${student.firstName}"></td>
 				<td th:text="${student.lastName}"></td>
 				<td th:text="${student.email}"></td>
+				<td th:text="${student.address}"></td>
+				<td th:text="${student.contact}"></td>
+				<td th:text="${student.dob}"></td>
+				<td th:text="${student.course}"></td>
+				
 				<td><a th:href="@{students/edit/{id}(id=${student.id})}" class="btn btn-info">Update</a>
 				<a th:href="@{students/{id}(id=${student.id})}" class="btn btn-danger">Delete</a>
 				

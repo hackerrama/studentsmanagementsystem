@@ -6,11 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.studentsmanagementsystem.entity.Student;
+import com.studentsmanagementsystem.entity.User_Pass;
 import com.studentsmanagementsystem.repository.Studentrepository;
+import com.studentsmanagementsystem.repository.user_repo;
 import com.studentsmanagementsystem.service.StudentService;
 
 @Service
-public class ServiceImpl implements StudentService
+public class ServiceImpl implements StudentService 
 {
 	@Autowired
 	Studentrepository Studentrepository;
@@ -21,6 +23,7 @@ public class ServiceImpl implements StudentService
 		List<Student> list = Studentrepository.findAll();
 		return list;
 	}
+
 	
 	@Override
 	public Student saveStudent(Student student)
@@ -41,6 +44,6 @@ public class ServiceImpl implements StudentService
 		Studentrepository.deleteById(id);
 		
 	}
-	
+		
 
 }
