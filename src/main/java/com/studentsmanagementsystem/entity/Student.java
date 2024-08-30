@@ -19,7 +19,7 @@ public class Student {
 	@Column(name = "last_name")
 	private String lastName;
 	
-	private String email;
+	 private String email;
 	 private String address;
 	 private String contact;
 	 private String dob;
@@ -27,7 +27,8 @@ public class Student {
 	
 	
 	 public Student(int id, String firstName, String lastName, String email, String address, String contact, String dob,
-				String course) {
+				String course)
+	 	{
 			super();
 			this.id = id;
 			this.firstName = firstName;
@@ -44,11 +45,7 @@ public class Student {
 		public Student() 
 		{
 			super();
-			// TODO Auto-generated constructor stub
 		}
-
-	
-
 
 	public String getAddress() {
 		return address;

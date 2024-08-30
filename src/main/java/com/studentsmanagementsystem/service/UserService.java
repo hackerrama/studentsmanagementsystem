@@ -9,8 +9,5 @@ public interface UserService
 {
 	public List<User_Pass> getAllUser();
 
-//	public List<User_Pass> getAlluser();
-//	
-//	public User_Pass getByusername();
 
 }

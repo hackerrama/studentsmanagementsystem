@@ -19,7 +19,6 @@ public class Controller
 
 	@Autowired
 	private StudentService service;
-	
 	@Autowired
 	private UserService uservice;
 	
