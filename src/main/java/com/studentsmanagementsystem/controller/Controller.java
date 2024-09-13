@@ -30,7 +30,7 @@ public class Controller
 	}
 	
 
-	@GetMapping("/login")
+	@PostMapping("/login")
 	public String Student() {
 		System.out.println("Controller.Student1()");
 
